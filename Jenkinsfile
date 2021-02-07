@@ -21,8 +21,9 @@ pipeline {
                             stage('Deploying now') {
                             agent {
                                     any {
-                                            reuseNode true
-                                            image ‘nginx’
+                                             image ‘nginx’
+                                             reuseNode true
+                                            
                                            }
                                     }
                             
